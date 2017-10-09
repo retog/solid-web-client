@@ -241,7 +241,7 @@ class SolidWebClient {
 
     let options = {}
     options.headers = {}
-    options.headers['Link'] = resourceType + '; rel="type"'
+    options.headers['Link'] = '<'+resourceType+'>' + '; rel="type"';
     options.headers['Content-Type'] = mimeType
 
     if (slug && slug.length > 0) {
